@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Level 1 - As Objects</title>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Indie+Flower|Walter+Turncoat" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="main_container">
+    <div class="game_area">
+        <img id="puppy" angle="0" src="images/puppy.png"/>
+        <div id="tree1" class="tree"></div>
+        <div id="tree2" class="tree"></div>
+        <div class="bone1"></div>
+    </div>
+    <div class="command_area">
+        <div class="giveCommands">
+            <button>Forward</button>
+            <button>Back</button>
+            <button>Turn Left</button>
+            <button>Turn Right</button>
+            <!--<button>Roll Left</button>-->
+            <!--<button>Roll Right</button>-->
+        </div>
+        <div class="commandLine">
+            <!--This is where currentCommand que will be appended-->
+        </div>
+        <button class="executeButton">Execute Commands</button>
+        <button class="removeCommand">Remove Last Command</button>
+        <button class="clearCommands">Clear Commands</button>
+        <p>Unfulfilled Commands: <span class="unfulfilledDisplay">0</span></p>
+    </div>
+</div>
+</body>
+</html>

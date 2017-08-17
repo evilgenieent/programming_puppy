@@ -1,0 +1,71 @@
+* {
+    font-family: 'Walter Turncoat', cursive;
+}
+body {
+    background-color: #2c2c29;
+}
+p {
+    color: white;
+}
+.main_container {
+    width: 420px;
+    margin: auto;
+}
+.game_area {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    display: grid;
+    background-image: url(images/map1.png);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#puppy {
+    height: 100px;
+    width: 100px;
+    grid-area: 1 / 1;
+    transform: rotate(0deg);
+}
+.bone1 {
+    grid-area: 1 / 4;
+    background-image: url(images/bone.png)
+}
+#tree1 {
+    grid-area: 2 / 3;
+}
+#tree2 {
+    grid-area: 1 / 2;
+}
+.tree {
+    display: block;
+    height: 100px;
+    width: 100px;
+    background: url(images/treesprite.png) left center;
+    animation: animate8 1.3s steps(8) infinite;
+}
+@keyframes animate8 {
+    0% {background-position: 800px;}
+}
+@keyframes movement {
+    0% {background-position: 0;}
+    100% {background-position: 100px;}
+}
+.commandBox {
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px -30px 5px;
+    padding-top: 30px;
+    font-size: 14px;
+    background: url(images/talkbubble.png) top left;
+    background-repeat: no-repeat;
+    color: black;
+    width: 85px;
+    height: 85px;
+}
+.commandLine {
+    display: flex;
+    flex-flow: row wrap;
+}
+.commandLine > div:active {
+    background-position: -85px 0;
+}
