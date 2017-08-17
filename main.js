@@ -220,6 +220,7 @@ var CommandArea = function() {
                     puppyObject.turnRight();
                     break;
             }
+            //Increment the current position, check if we're at the end of the CommandQue, if we are, clear the execute interval
             currentPosition++;
             if (currentPosition > length) {
                 clearInterval(execute);

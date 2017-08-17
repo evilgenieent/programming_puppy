@@ -10,13 +10,16 @@
 </head>
 <body>
 <div class="main_container">
+    <!--Game Area holds all of the components the puppy will interact with-->
     <div class="game_area">
         <img id="puppy" angle="0" src="images/puppy.png"/>
         <div id="tree1" class="tree"></div>
         <div id="tree2" class="tree"></div>
         <div class="bone1"></div>
     </div>
+    <!--The command_area holds all of DOM elements related to giving and executing commands-->
     <div class="command_area">
+        <!--givCommands holds all of the buttons with current available commands the player can give to the puppy-->
         <div class="giveCommands">
             <button>Forward</button>
             <button>Back</button>
@@ -28,6 +31,7 @@
         <div class="commandLine">
             <!--This is where currentCommand que will be appended-->
         </div>
+        <!--These buttons are for executing nad modifying the currentCommand que-->
         <button class="executeButton">Execute Commands</button>
         <button class="removeCommand">Remove Last Command</button>
         <button class="clearCommands">Clear Commands</button>
